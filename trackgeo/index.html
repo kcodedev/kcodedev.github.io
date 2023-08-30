@@ -12,6 +12,9 @@
     #track-geo td {
       text-align: right;
     }
+    .selected {
+      background-color: #cbcbcc;
+    }
   </style>
 </head>
 
@@ -200,7 +203,7 @@
         <img src="ucdd-starts.png" alt="base image">
         <p></p>
         <div class="table-responsive" id="track-geo">
-          <table class="table table-dark table-hover">
+          <table id="clickableTable" class="table table-dark table-hover">
             <thead class="thead-dark">
               <tr style="text-align: right;">
                 <th scope="col" colspan="4"></th>
@@ -550,7 +553,24 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const table = document.getElementById('clickableTable');
 
+      table.addEventListener('click', function (event) {
+        const clickedRow = event.target.closest('tr');
+        if (!clickedRow) return;
+
+        // Remove .selected from all rows
+        const rows = table.querySelectorAll('tr');
+        rows.forEach(row => row.classList.remove('selected'));
+
+        // Add .selected to the clicked row
+        clickedRow.classList.add('selected');
+      });
+    });
+
+  </script>
 </body>
 
 </html>
