@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #track-geo td {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Churchill Downs - Dirt</h2>
+
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li><a data-toggle="tab" href="#menu0">Track Geo</a></li>
+      <li><a data-toggle="tab" href="#menu1">1023m</a></li>
+      <li><a data-toggle="tab" href="#menu2">1123m</a></li>
+      <li><a data-toggle="tab" href="#menu3">1268m</a></li>
+      <li><a data-toggle="tab" href="#menu4">1322m</a></li>
+      <li><a data-toggle="tab" href="#menu5">1420m</a></li>
+      <li><a data-toggle="tab" href="#menu6">1621m</a></li>
+      <li><a data-toggle="tab" href="#menu7">1725m</a></li>
+      <li><a data-toggle="tab" href="#menu8">1822m</a></li>
+      <li><a data-toggle="tab" href="#menu9">2029m</a></li>
+      <li><a data-toggle="tab" href="#menu10">2434m</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <br>
+        <p>Churchill Downs is an iconic horse racing venue located in Louisville, Kentucky, and is perhaps best known as
+          the home of the Kentucky Derby. Founded in 1875, it's a symbol of both Southern tradition and the competitive
+          spirit of horse racing. Its Twin Spires, an architectural feature that was added in 1895, have become a symbol
+          of the racecourse and are instantly recognizable to fans of the sport.
+        <p> Covering 147 acres, the racecourse features a one-mile dirt oval, and it also offers turf racing on the Matt
+          Winn Turf Course. While the Kentucky Derby, a Grade I stakes race for three-year-old Thoroughbreds, is
+          undoubtedly the star attraction, Churchill Downs hosts numerous other races throughout the year, including the
+          Kentucky Oaks and the Breeders' Cup on occasion.
+        </p>
+        <p> The venue pulses with energy, especially on the first Saturday in May when the Kentucky Derby takes place.
+          With extravagant hats, mint juleps, and the singing of "My Old Kentucky Home," the atmosphere is electric and
+          drenched in tradition.
+        </p>
+        <p> Churchill Downs is not just a racetrack; it's a piece of American sporting history. From legends like
+          Secretariat and Man o' War to modern-day heroes, the track has seen some of the most dramatic and
+          unforgettable moments in horse racing. It's a must-see for anyone with even a passing interest in the sport.
+        </p>
+        </p>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Track Surface</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Type:</em> Dirt</p>
+                <p><em>Composition/Quality:</em> Consistently maintained for premier racing quality, with the specific
+                  blend of minerals and sand to ensure optimal performance and safety</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Track Length</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Total Distance:</em> 1 mile</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Turns</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Number of turns:</em> 2</p>
+                <p><em>Turn radius:</em> ~127m</p>
+                <p><em>Banking angle:</em> Varies but generally shallow to ensure horse safety</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Homestretch and Backstretch</a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Length:</em> ~400m for homestretch and backstretch</p>
+                <p><em>Width:</em> ~20m</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Race Lengths</a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>
+                <ul>
+                  <li>6 furlongs</li>
+                  <li>1 mile</li>
+                  <li>1 1/8 mile</li>
+                  <li>1 1/4 mile</li>
+                  <li>and more</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Track Maintenance</a>
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Watering Method:</em> Sprinkler system combined with manual methods when necessary</p>
+                <p><em>Frequency of Maintenance:</em> Daily grading and watering with in-depth maintenance weekly</p>
+                <p><em>Last Renovation:</em> Variable - would need a current update, e.g. April 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Safety Features</a>
+              </h4>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Rail Type:</em> Primarily Steel with safety features to prevent injuries</p>
+                <p><em>Drainage System:</em> Advanced undertrack drainage system designed to rapidly remove
+                  water and maintain optimal track conditions</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Weather Considerations</a>
+              </h4>
+            </div>
+            <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Track Reaction to Rain:</em> Drains efficiently, however, it can become sloppy with sustained
+                  heavy rain</p>
+                <p><em>Average Temperature During Racing Season:</em> 60°F - 75°F (Spring and Fall meets)</p>
+                <p><em>Predominant Wind Direction</em> Varies, but generally from the West or Southwest</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Historical Data</a>
+              </h4>
+            </div>
+            <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><em>Track Records:</em></p>
+                <ul>
+                  <li>1 mile: tbc</li>
+                  <li>1 1/4 mile: tbc</li>
+                  <li>etc.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div id="menu0" class="tab-pane fade">
+        <p></p>
+        <img src="ucdd-starts.png" alt="base image">
+        <p></p>
+        <div class="table-responsive" id="track-geo">
+          <table class="table table-dark table-hover">
+            <thead class="thead-dark">
+              <tr style="text-align: right;">
+                <th scope="col" colspan="4"></th>
+                <th scope="col" colspan="2" style="background-color: #D1E6E6;">Straight1</th>
+                <th scope="col" colspan="4" style="background-color: #D6D6C2;">Turn 1</th>
+                <th scope="col" colspan="2" style="background-color: #D1E6E6;">Straight2</th>
+                <th scope="col" colspan="4" style="background-color: #D6D6C2;">Turn 2</th>
+                <th scope="col" colspan="2" style="background-color: #D1E6E6;">Straight3</th>
+                <th scope="col" colspan="4" style="background-color: #D6D6C2;">Turn 3</th>
+                <th scope="col" colspan="2" style="background-color: #D1E6E6;">Straight4</th>
+              </tr>
+              </tr>
+              <tr>
+                <td>Distance</td>
+                <td>Straights</td>
+                <td>Qty Turns</td>
+                <td>Turn % of Dist</td>
+                <td>Distance</td>
+                <td>Elevation+-</td>
+                <td>Turn Type</td>
+                <td>Radius</td>
+                <td>Turn Degrees</td>
+                <td>Turn Length</td>
+                <td>Distance</td>
+                <td>Elevation+-</td>
+                <td>Turn Type</td>
+                <td>Radius</td>
+                <td>Turn Degrees</td>
+                <td>Turn Length</td>
+                <td>Distance</td>
+                <td>Elevation+-</td>
+                <td>Turn Type</td>
+                <td>Radius</td>
+                <td>Turn Degrees</td>
+                <td>Turn Length</td>
+                <td>Distance</td>
+                <td>Elevation+-</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1023</td>
+                <td>623</td>
+                <td>1</td>
+                <td>39%</td>
+                <td>254</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1123</td>
+                <td>723</td>
+                <td>1</td>
+                <td>36%</td>
+                <td>354</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1268</td>
+                <td>868</td>
+                <td>1</td>
+                <td>32%</td>
+                <td>499</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1322</td>
+                <td>922</td>
+                <td>1</td>
+                <td>30%</td>
+                <td>553</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1420</td>
+                <td>1020</td>
+                <td>1</td>
+                <td>28%</td>
+                <td>651</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1621</td>
+                <td>1221</td>
+                <td>1</td>
+                <td>25%</td>
+                <td>852</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1725</td>
+                <td>925</td>
+                <td>2</td>
+                <td>46%</td>
+                <td>156</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>400</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>1822</td>
+                <td>1022</td>
+                <td>2</td>
+                <td>44%</td>
+                <td>253</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>400</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>2029</td>
+                <td>1329</td>
+                <td>2</td>
+                <td>34%</td>
+                <td>560</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>400</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>0</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>2434</td>
+                <td>1234</td>
+                <td>3</td>
+                <td>49%</td>
+                <td>65</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>400</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>400</td>
+                <td>0</td>
+                <td>Medium</td>
+                <td>127.33</td>
+                <td>180</td>
+                <td>400</td>
+                <td>369</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+          , totam rem aperiam.</p>
+        <img src="ucdd1123.PNG" alt="base image">
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu4" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu5" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu6" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu7" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu8" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu9" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu10" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

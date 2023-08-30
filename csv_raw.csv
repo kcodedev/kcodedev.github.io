@@ -1,0 +1,12 @@
+ , , , ,Straight1, ,Turn 1, , , ,Straight2, ,Turn 2, , , ,Straight3, ,Turn 3, , , ,Straight4, 
+Distance,Straights,Qty Turns,Turn % of Dist,Distance,Elevation+-,Turn Type,Radius,Turn Degrees,Turn Length,Distance,Elevation+-,Turn Type,Radius,Turn Degrees,Turn Length,Distance,Elevation+-,Turn Type,Radius,Turn Degrees,Turn Length,Distance,Elevation+-
+1023,623,1,39%,254,0,Medium,127.33,180,400,369,0,na,na,na,na,0,na,na,na,na,na,0,na
+1123,723,1,36%,354,0,Medium,127.33,180,400,369,0,na,na,na,na,0,na,na,na,na,na,0,na
+1268,868,1,32%,499,0,Medium,127.33,180,400,369,0,na,na,na,na,0,na,na,na,na,na,0,na
+1322,922,1,30%,553,0,Medium,127.33,180,400,369,0,na,na,na,na,0,na,na,na,na,na,0,na
+1420,1020,1,28%,651,0,Medium,127.33,180,400,369,0,na,na,na,na,0,na,na,na,na,na,0,na
+1621,1221,1,25%,852,0,Medium,127.33,180,400,369,0,na,na,na,na,0,na,na,na,na,na,0,na
+1725,925,2,46%,156,0,Medium,127.33,180,400,400,0,Medium,127.33,180,400,369,na,na,na,na,na,0,na
+1822,1022,2,44%,253,0,Medium,127.33,180,400,400,0,Medium,127.33,180,400,369,na,na,na,na,na,0,na
+2029,1329,2,34%,560,0,Medium,127.33,180,400,400,0,Medium,127.33,180,400,369,na,na,na,na,na,0,na
+2434,1234,3,49%,65,0,Medium,127.33,180,400,400,0,Medium,127.33,180,400,400,0,Medium,127.33,180,400,369,0
