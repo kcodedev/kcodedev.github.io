@@ -21,6 +21,29 @@
     .selected {
       background-color: #cbcbcc;
     }
+
+    .table-container {
+      overflow: auto;
+      width: 100%;
+    }
+
+    table {
+      position: relative;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    /* For the first column */
+    td:first-child,
+    th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      background: white;
+      /* You can choose your own background color */
+      border-right: 1px solid #ccc;
+      /* Add a border to distinguish it */
+    }
   </style>
 </head>
 
@@ -208,11 +231,12 @@
         <p></p>
         <img src="ucdd-starts.png" alt="base image">
         <p></p>
-        <div class="table-responsive" id="track-geo">
-          <table id="clickableTable" class="table table-dark table-hover">
+        <div class="table-responsive table-container" id="track-geo">
+          <table id="clickableTable" class="table table-hover">
             <thead class="thead-dark">
               <tr style="text-align: right;">
-                <th scope="col" colspan="4"></th>
+                <th></th>
+                <th scope="col" colspan="3"></th>
                 <th scope="col" colspan="2" style="background-color: #D1E6E6;">Straight1</th>
                 <th scope="col" colspan="4" style="background-color: #D6D6C2;">Turn 1</th>
                 <th scope="col" colspan="2" style="background-color: #D1E6E6;">Straight2</th>
