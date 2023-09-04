@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    /* CSS to freeze the first row and first column */
+    .table-container {
+      position: relative;
+      overflow: auto;
+      max-width: 800px;
+      max-height: 400px;
+      margin: auto;
+    }
+    .freezable-row th,
+    .freezable-col {
+      position: sticky;
+      background: white;
+      z-index: 1;
+    }
+    .freezable-row th {
+      top: 0;
+      z-index: 3;
+    }
+    .freezable-col {
+      left: 0;
+      z-index: 2; /* Overlap the row */
+    }
+    
+    /* CSS for row highlighting on click */
+    .clicked-row {
+      background-color: #d5d5d5 !important;
+    }
+
+    /* Center the table */
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: -8px; /* Offset for browser default margin */
+    }
+  </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="table-container">
+            <table class="table is-bordered is-hoverable">
+              <thead class="freezable-row">
+                <tr>
+                  <th class="freezable-col">ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Country</th>
+                  <th>Zip</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="freezable-col">1</td>
+                  <td>John Doe</td>
+                  <td>john.doe@example.com</td>
+                  <td>123-456-7890</td>
+                  <td>New York</td>
+                  <td>NY</td>
+                  <td>USA</td>
+                  <td>10001</td>
+                </tr>
+                <tr>
+                  <td class="freezable-col">2</td>
+                  <td>Jane Doe</td>
+                  <td>jane.doe@example.com</td>
+                  <td>987-654-3210</td>
+                  <td>Los Angeles</td>
+                  <td>CA</td>
+                  <td>USA</td>
+                  <td>90001</td>
+                </tr>
+                <tr>
+                  <td class="freezable-col">3</td>
+                  <td>Emily Smith</td>
+                  <td>emily.smith@example.com</td>
+                  <td>111-222-3333</td>
+                  <td>Chicago</td>
+                  <td>IL</td>
+                  <td>USA</td>
+                  <td>60601</td>
+                </tr>
+                <tr>
+                  <td class="freezable-col">4</td>
+                  <td>Michael Brown</td>
+                  <td>michael.brown@example.com</td>
+                  <td>4445556666</td>
+                  <td>Houston</td>
+                  <td>TX</td>
+                  <td>USA</td>
+                  <td>77001</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+
+      <script>
+        // JavaScript for row click to toggle highlight
+        document.addEventListener("DOMContentLoaded", () => {
+          const rows = document.querySelectorAll("tbody tr");
+          rows.forEach(row => {
+            row.addEventListener("click", function() {
+              if (this.classList.contains("clicked-row")) {
+                this.classList.remove("clicked-row");
+              } else {
+                rows.forEach(r => r.classList.remove("clicked-row"));
+                this.classList.add("clicked-row");
+              }
+            });
+          });
+        });
+      </script>
+
+</body>
+</html>
